@@ -22,7 +22,17 @@
 }
 /* общие свойства */
 
-
+.button {
+  border: none;
+  border-radius: 9999px;
+  height: 35px;
+  min-width: 148px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375px;
+  margin: 0;
+  padding: 0;
+}
 
 /* header */
 .header {
@@ -92,6 +102,7 @@
   background-color: #000;
   background-image: url('../images/headerBackground.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
   height: 740px;
 }
 
@@ -118,7 +129,7 @@
   color: #fff;
 }
 
-.content__container {
+.blocks {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -131,4 +142,144 @@
   padding: 0;
   height: 740px;
   width: 640px;
+}
+
+
+.block__caption {
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  margin: 222px 112px 28px;
+  padding: 0;
+  max-width: 333px;
+}
+
+.block__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 416px;
+  margin: 0 112px 38px;
+  padding: 0;
+}
+
+.block__button {
+  background-color: #000;
+  color: #fff;
+  margin: 0 112px 0;
+}
+
+.block__title {
+  font-weight: 400;
+  font-size: 109px;
+  line-height: 1.41;
+  text-align: center;
+  margin: 292px auto;
+  padding: 0;
+}
+
+.block:nth-child(1) {
+  background-color: #4A00FF;
+  color: #fff;
+}
+
+.block:nth-child(4) {
+  background-color: #00FF9D;
+  color: #000;
+}
+
+.block:nth-child(5) {
+  background-color: #FF8B00;
+  color: #000;
+}
+
+.block:nth-child(5) > .block__button {
+  width: 229px;
+}
+/* blokcs */
+
+
+
+
+/* carusel */
+.carusel {
+  height: 954px;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* carusel */
+
+
+/* higglights */
+.highlights {
+  margin: 0 24px 0;
+  padding: 0 0 24px;
+}
+
+.highlights__title {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.34;
+  text-transform: uppercase;
+  margin: 31px 0 22px;
+  padding: 0;
+}
+
+.table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.table__title {
+  border-bottom: 1px solid #EBEBEB;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.table__subtitle {
+  border-bottom: 1px solid #EBEBEB;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  text-transform: uppercase;
+}
+
+.table > tbody > tr > .table__subtitle:nth-child(3) {
+  text-align: right;
+}
+
+/* higglights */
+
+
+
+/* footer */
+
+.footer {
+  background-color: #000;
+  margin: 0 auto;
+  height: 278px;
+  color: #fff;
+}
+
+.footer__title {
+  margin: 0 0 56px;
+  padding: 60px 0 0;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.footer__button {
+  background-color: #FFFF02;
+  margin: 0 auto;
+  display: block;
 }
