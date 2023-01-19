@@ -27,4 +27,14 @@
   }
   // включение слайдера
   slideEnable()
+
+  //анимация
+  function headerAnimation() {
+    const hiddenElemeltList = Array.from(document.querySelectorAll('.hidden'))
+    hiddenElemeltList.forEach(hiddenElement => {
+      hiddenElement.style.opacity = 1
+    })
+  }
+  setInterval(headerAnimation, 1)
+  
 })();

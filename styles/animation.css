@@ -1,0 +1,50 @@
+@keyframes headerSlogan {
+  from {
+    transform: translateX(-220px);
+  }
+  to {
+    transform: translateX(0)
+  }
+}
+
+@keyframes smallToBig {
+  from {
+    transform: scale(.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.hidden { 
+  opacity: 0;
+}
+
+.header__link > .header__logo {
+  animation: smallToBig .5s linear .5s;
+  transition: .2s all .6s linear;
+}
+
+.header__link + .header__nav > .header__link {
+  animation: smallToBig .5s linear 1.2s;
+  transition: opacity .2s linear 1.2s;
+}
+
+.header__socian {
+  transition: .3s all 1.9s linear;
+}
+
+.header__socian > .header__link {
+  animation: smallToBig .5s linear 1.9s;
+  transition: .3s all 1.9s linear;
+}
+
+.header__socian + .header__nav {
+  animation: smallToBig .5s linear 2.6s;
+  transition: .3s all 2.6s linear;
+}
+
+.header__slogan {
+  animation: headerSlogan 1.3s ease 2.9s;
+  transition: .8s all 3s linear;
+}
