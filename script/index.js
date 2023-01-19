@@ -35,6 +35,6 @@
       hiddenElement.style.opacity = 1
     })
   }
-  setInterval(headerAnimation, 1)
+  setInterval(headerAnimation, 100)
   
 })();
