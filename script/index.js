@@ -36,7 +36,5 @@
     })
   }
   setInterval(headerAnimation, 100)
-  
-})();
 
-////
+})();

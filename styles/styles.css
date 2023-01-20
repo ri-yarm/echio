@@ -123,6 +123,7 @@
   line-height: 1.04;
   text-align: center;
   max-width: 1210px;
+  user-select: none;
 }
 /* header */
 
@@ -131,6 +132,7 @@
 /* main */
 .content {
   box-sizing: border-box;
+  /* user-select: none; */
 }
 
 .block_background-black {
@@ -295,7 +297,7 @@
 }
 .slide_left {
   background-image: url(../images/slider__button_left.svg);
-  margin-right: 16px; 
+  margin-right: 16px;
 }
 
 .slide_right {
