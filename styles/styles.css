@@ -155,7 +155,6 @@
   width: 640px;
 }
 
-
 .block__caption {
   font-weight: 400;
   font-size: 39px;
@@ -193,16 +192,19 @@
 .block:nth-child(1) {
   background-color: #4A00FF;
   color: #fff;
+  z-index: 2;
 }
 
 .block:nth-child(4) {
   background-color: #00FF9D;
   color: #000;
+  z-index: 2;
 }
 
 .block:nth-child(5) {
   background-color: #FF8B00;
   color: #000;
+  z-index: 2;
 }
 
 .block:nth-child(5) > .block__button {

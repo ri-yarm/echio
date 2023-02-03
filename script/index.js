@@ -1,6 +1,6 @@
 (function () {
   //функция слайдера
-  function slideEnable() {
+  (function slideEnable() {
     const slider = document.querySelector('.slider'),
         slides = Array.from(document.querySelectorAll('.slide')),
         btnSlideLeft = document.querySelector('.slide_left'),
@@ -23,9 +23,10 @@
 
     btnSlideRight.addEventListener('click', () => slideRight());
     btnSlideLeft.addEventListener('click', () => slideLeft())
-  }
+
+    setInterval(slideRight, 4000)
+  })()
   // включение слайдера
-  slideEnable()
 
   //анимация
   function headerAnimation() {
